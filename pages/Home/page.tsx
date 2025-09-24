@@ -72,7 +72,7 @@ export default function HomePage() {
     ScrollTrigger.refresh();
 
     // Custom section snapping logic
-    let isSnapping = false;
+    const isSnapping = false;
     const sections = Array.from(
       document.querySelectorAll(".scroll-section")
     ) as HTMLElement[];

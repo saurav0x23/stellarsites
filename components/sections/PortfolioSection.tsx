@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import cn from "clsx";
 
 export const PortfolioSection = () => {
-  const [hoveredCard, setHoveredCard] = useState(null);
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   return (
     <section className="w-full py-20 bg-gradient-to-br from-background via-background to-muted/20">

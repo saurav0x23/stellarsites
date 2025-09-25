@@ -144,7 +144,7 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-6">
-            <Link
+            {/* <Link
               href="https://github.com"
               className="hover:text-white transition"
             >
@@ -161,14 +161,15 @@ const Footer = () => {
               className="hover:text-white transition"
             >
               <Twitter size={20} />
-            </Link>
+            </Link> */}
+            stellarsites0x23@gmail.com
           </div>
         </div>
       </div>
 
       {/* Bottom Note */}
       <div className="mt-12 border-t border-slate-700 pt-6 text-center text-slate-500 text-sm">
-        © {new Date().getFullYear()} YourAgency. All rights reserved.
+        © {new Date().getFullYear()} StellarSites. All rights reserved.
       </div>
     </footer>
   );

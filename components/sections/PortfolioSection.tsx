@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import cn from "clsx";
 
 export const PortfolioSection = () => {
@@ -11,25 +11,17 @@ export const PortfolioSection = () => {
     <section className="w-full py-20 bg-gradient-to-br from-background via-background to-muted/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Enhanced Title Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-            <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-primary">Portfolio</span>
-          </div>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-            Our Featured
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent block">
-              Works
-            </span>
-          </h2>
+          <h2 className="text-4xl text-foreground leading-tight">Our Works</h2>
           <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Discover our latest projects showcasing innovative solutions and cutting-edge design
+            Discover our latest projects showcasing innovative solutions and
+            cutting-edge design
           </p>
         </motion.div>
 
@@ -41,15 +33,15 @@ export const PortfolioSection = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ 
-                duration: 0.6, 
+              transition={{
+                duration: 0.6,
                 delay: index * 0.1,
                 type: "spring",
-                stiffness: 100
+                stiffness: 100,
               }}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.02,
-                transition: { duration: 0.2 }
+                transition: { duration: 0.2 },
               }}
               onHoverStart={() => setHoveredCard(card.id)}
               onHoverEnd={() => setHoveredCard(null)}
@@ -82,7 +74,7 @@ export const PortfolioSection = () => {
 
               {/* Enhanced Overlay with Better Gradient - Stronger for text readability */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/20 group-hover:from-black/98 group-hover:via-black/80 group-hover:to-black/30 transition-all duration-500" />
-              
+
               {/* Additional overlay for better text contrast */}
               <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
 
@@ -93,9 +85,9 @@ export const PortfolioSection = () => {
               <div className="absolute inset-0 p-6 sm:p-8 flex flex-col justify-end z-10">
                 <motion.div
                   initial={{ y: 20, opacity: 0.8 }}
-                  animate={{ 
+                  animate={{
                     y: hoveredCard === card.id ? 0 : 20,
-                    opacity: hoveredCard === card.id ? 1 : 0.8
+                    opacity: hoveredCard === card.id ? 1 : 0.8,
                   }}
                   transition={{ duration: 0.3 }}
                 >
@@ -191,7 +183,7 @@ export const PortfolioSection = () => {
         </div>
 
         {/* Call to Action */}
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -210,7 +202,7 @@ export const PortfolioSection = () => {
               </svg>
             </div>
           </motion.button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

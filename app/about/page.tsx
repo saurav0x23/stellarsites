@@ -92,7 +92,7 @@ export default function AboutPage() {
               <img src="/logo.svg" alt="" className="h-32 w-32 my-4 animate-spin-slow"/>
             </div>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              We're a dedicated team of web developers helping businesses
+              We&apos;re a dedicated team of web developers helping businesses
               worldwide establish their digital presence with beautiful,
               high-performing websites.
             </p>
@@ -114,12 +114,12 @@ export default function AboutPage() {
               </h2>
               <p className="text-lg text-slate-600 mb-6">
                 At StellarSites, we believe every business deserves a website
-                that not only looks great but also performs exceptionally. We're
+                that not only looks great but also performs exceptionally. We&apos;re
                 committed to making professional web development accessible to
                 businesses of all sizes.
               </p>
               <p className="text-lg text-slate-600">
-                Whether you're a local shop in Australia or a growing startup in
+                Whether you&apos;re a local shop in Australia or a growing startup in
                 Canada, we tailor our solutions to meet your specific needs and
                 help you succeed online.
               </p>
@@ -137,7 +137,7 @@ export default function AboutPage() {
                   Global Reach, Local Understanding
                 </h3>
                 <p className="text-blue-100">
-                  We've helped businesses in over 15 countries establish their
+                  We&apos;ve helped businesses in over 15 countries establish their
                   online presence, with a special focus on English-speaking
                   markets like Australia, Canada, and New Zealand where we
                   understand the local business landscape.
@@ -223,7 +223,7 @@ export default function AboutPage() {
               Meet Our Team
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              We're a small but dedicated team of experts passionate about
+              We&apos;re a small but dedicated team of experts passionate about
               creating exceptional digital experiences for our clients.
             </p>
           </motion.div>
@@ -278,7 +278,7 @@ export default function AboutPage() {
               Ready to Build Your Stellar Website?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Let's discuss your project and create a website that helps your
+              Let&apo;s discuss your project and create a website that helps your
               business shine online.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -6,6 +6,34 @@ import GlareHover from "../GlareHover";
 import CardSwap, { Card } from "../CardSwap";
 
 const HeroSection = () => {
+  const projectData = [
+    {
+      image: "/portfolio/madrasa.png",
+      name: "Madrasa Platform",
+      description:
+        "A global e-learning platform offering personalized dashboards for both students and teachers. Designed to make quality education accessible to everyone, regardless of location or background.",
+    },
+    {
+      image: "/portfolio/skillsync.png",
+      name: "SkillSync",
+      description:
+        "Upload your resume and let AI instantly enhance it. SkillSync matches you with tailored job opportunities from top companies—your career upgrade starts here.",
+    },
+    {
+      image: "/portfolio/heavy.png",
+
+    },
+    {
+      image: "/portfolio/nftix.png",
+      name: "NFTix",
+      description:
+        "A decentralized platform to mint secure NFT-based event tickets. Focuses on transparency, safety, and simplicity. Built with performance-first principles and modern UI.",
+    },
+    {
+      image:
+        "https://cdn.dribbble.com/userupload/43412719/file/original-718fd35e460756288f2e6fadd299d65b.jpg?resize=2400x1800&vertical=center",
+    },
+  ];
   return (
     <section className="relative flex items-center justify-center min-h-screen w-full overflow-hidden">
       {/* Background blur */}
@@ -87,50 +115,17 @@ const HeroSection = () => {
                   delay={5000}
                   pauseOnHover={false}
                 >
-                  <Card
-                    style={{
-                      backgroundImage:
-                        "url(https://imgs.search.brave.com/ht2DN8eILi9CZv6q23MYZtS_fTnk7ckWRJgK3oSo-p4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly92ZW5u/Z2FnZS13b3JkcHJl/c3MuczMuYW1hem9u/YXdzLmNvbS91cGxv/YWRzLzIwMjAvMDgv/QWdlbmN5LUxhbmRp/bmctUGFnZS5wbmc)",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  >
-                    <h3>Agency Landing</h3>
-                    <p>Professional design that converts</p>
-                  </Card>
-                  <Card
-                    style={{
-                      backgroundImage:
-                        "url(https://imgs.search.brave.com/ht2DN8eILi9CZv6q23MYZtS_fTnk7ckWRJgK3oSo-p4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly92ZW5u/Z2FnZS13b3JkcHJl/c3MuczMuYW1hem9u/YXdzLmNvbS91cGxv/YWRzLzIwMjAvMDgv/QWdlbmN5LUxhbmRp/bmctUGFnZS5wbmc)",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  >
-                    <h3>E-commerce Store</h3>
-                    <p>Beautiful product showcases</p>
-                  </Card>
-                  <Card
-                    style={{
-                      backgroundImage:
-                        "url(https://imgs.search.brave.com/ht2DN8eILi9CZv6q23MYZtS_fTnk7ckWRJgK3oSo-p4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly92ZW5u/Z2FnZS13b3JkcHJl/c3MuczMuYW1hem9u/YXdzLmNvbS91cGxv/YWRzLzIwMjAvMDgv/QWdlbmN5LUxhbmRp/bmctUGFnZS5wbmc)",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  >
-                    <h3>Portfolio Site</h3>
-                    <p>Showcase your best work</p>
-                  </Card>
-                  <Card
-                    style={{
-                      backgroundImage:
-                        "url(https://imgs.search.brave.com/ht2DN8eILi9CZv6q23MYZtS_fTnk7ckWRJgK3oSo-p4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly92ZW5u/Z2FnZS13b3JkcHJl/c3MuczMuYW1hem9u/YXdzLmNvbS91cGxv/YWRzLzIwMjAvMDgv/QWdlbmN5LUxhbmRp/bmctUGFnZS5wbmc)",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  >
-                    <h3>SaaS Platform</h3>
-                    <p>Clean, modern interfaces</p>
-                  </Card>
+                  {projectData.map((project, index) => (
+                    <Card
+                      key={index}
+                      style={{
+                        backgroundImage: `url(${project.image})`,
+                        backgroundSize: "contain",
+                        backgroundPosition: "center",
+                      }}
+                      className="aspect-video w-full h-full"
+                    ></Card>
+                  ))}
                 </CardSwap>
               </div>
             </div>

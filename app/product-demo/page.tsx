@@ -300,7 +300,7 @@ export default function ProductPage() {
                 {searchQuery && filteredProducts.length === 0 && (
                   <div className="absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl border border-gray-200 z-50 p-6 text-center animate-fadeIn">
                     <p className="text-gray-600 mb-2">No products found for</p>
-                    <p className="font-semibold text-gray-900">"{searchQuery}"</p>
+                    <p className="font-semibold text-gray-900">{searchQuery}</p>
                     <p className="text-sm text-gray-500 mt-2">Try different keywords or browse categories</p>
                   </div>
                 )}
@@ -585,3 +585,4 @@ export default function ProductPage() {
     </div>
   );
 }
+

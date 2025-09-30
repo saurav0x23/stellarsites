@@ -32,7 +32,7 @@ export default function RootLayout({
           <Loader />
         ) : (
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Navbar />
+            {window.location.pathname !== "/product-demo" && <Navbar />}
             {children}
           </ThemeProvider>
         )}
